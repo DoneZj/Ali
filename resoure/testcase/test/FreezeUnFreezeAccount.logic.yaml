@@ -1,0 +1,9 @@
+- !!- !!com.functiontest.model.TestLogic
+  logicId: NM_H_BUS_ACCOUNTING_MSG
+  description: bus accounting msg send
+  inputs: [targetName, index]
+  outputs: []
+  ccilExecute: |
+    msgBroker=ccprepare:object_prepare?targetName=${targetName}&index=${index}
+    ccprepare:ant_msg_broker?objectKey=msgBroker
+    ccprepare:sleep?seconds=30

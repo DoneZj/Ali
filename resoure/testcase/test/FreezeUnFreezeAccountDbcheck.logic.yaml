@@ -1,0 +1,12 @@
+- !!com.functiontest.model.TestData
+  logicId: NM_H_BUS_ACCOUNTING_MSG_DBCHECK
+  description: HK bus advance pay msg accounting
+  execute:
+    testcontex = {'refundAmountValue': 12345, 'instructionId': 'vuales1', 'depositId': 76975754745710}
+    path = r"C:\Users\ZhangJ\PycharmProjects\untitled\Ali\Python\File\DBSys_UserInfo.csv"
+    dbcheckbycsv = DBCheckByCsv(path, testcontex)
+    dbcheckbycsv.DBCheck()
+    dbcheckbycsv.DBCheck(2)
+    dbcheckbycsv.DBCheck(3)
+
+
