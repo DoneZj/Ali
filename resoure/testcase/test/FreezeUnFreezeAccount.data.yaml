@@ -1,0 +1,12 @@
+- !!com.functiontest.model.TestData
+  logicId: NM_H_BUS_ACCOUNTING_MSG
+  dataId: NM_H_BUS_ACCOUNTING_REFUND_PREPARE_MSG_FOR_APPLE_HK_HK_SITE
+  description: HK bus advance pay msg accounting
+  dataItems:
+    targetName: 'PaymentEventLogMsg'
+    index: 'paymenta'
+    eventcode: 'EC_EVENTLOG_0001'
+    tntInstId: 'ALIPW3HK'
+    productCode: 'MC400300000000000001'
+    payerUserId: 'dummyAccountNo'
+
